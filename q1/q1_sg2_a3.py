@@ -1,2 +1,1 @@
-print("hello")
-print("hi")
+int(input("enter a numbera:")
