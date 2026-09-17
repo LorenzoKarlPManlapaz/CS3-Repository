@@ -9,19 +9,21 @@ class Beaker(Glassware):
 
 class Tray:
     def __init__(self):
-        print("Tray created")
-
         self.beaker1 = Beaker("Glass", 100)
         self.beaker2 = Beaker("Glass", 100)
         self.beaker3 = Beaker("Glass", 100)
         self.beaker4 = Beaker("Glass", 100)
         self.beaker5 = Beaker("Glass", 100)
-    def showBeakers(self):
-        print("Tray contains 5 beakers")
-        print("Beaker 1: Glass, 100 mL")
-        print("Beaker 2: Glass, 100 mL")
-        print("Beaker 3: Glass, 100 mL")
-        print("Beaker 4: Glass, 100 mL")
-        print("Beaker 5: Glass, 100 mL")
+
 tray = Tray()
-tray.showBeakers()
+
+print("Tray contains 5 beakers.")
+print("Beaker 1:", tray.beaker1.capacity, "mL")
+print("Beaker 2:", tray.beaker2.capacity, "mL")
+print("Beaker 3:", tray.beaker3.capacity, "mL")
+print("Beaker 4:", tray.beaker4.capacity, "mL")
+print("Beaker 5:", tray.beaker5.capacity, "mL")
+
+del tray
+
+print("The tray is deleted, the 5 beakers is now gone")
